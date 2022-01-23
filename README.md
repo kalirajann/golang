@@ -111,3 +111,22 @@ func (d deck) print() {
 	}
 }
 ```
+
+### Data Structure - Struct
+
+Collection of different properties grouped together
+
+### pointer
+
+& - provides the memory address
+* gives the value that memory address is poiting
+
+```
+adamPointer := &adam
+	adamPointer.updateName("Bruce")
+	
+	func (pointerToPerson *person1) updateName(updateFirst string) {
+	pointerToPerson.firstname = updateFirst
+
+}
+```
