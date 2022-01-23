@@ -96,7 +96,7 @@ cards := []string{newCard(), "card2"}
 
 
 ### Custom Type & receiver
-
+```
 //Custom Type
 	cards1 := deck{newCard(), "card2", "card3"}
 	cards1.print()
@@ -110,3 +110,4 @@ func (d deck) print() {
 		fmt.Println(i, card)
 	}
 }
+```
