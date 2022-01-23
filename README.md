@@ -92,3 +92,21 @@ cards := []string{newCard(), "card2"}
   func newCard() string {
 	return "Five of Diamonds"
 }
+
+
+
+### Custom Type & receiver
+
+//Custom Type
+	cards1 := deck{newCard(), "card2", "card3"}
+	cards1.print()
+	
+//on other file	
+type deck []string
+
+//(d deck) - receiver
+func (d deck) print() {
+	for i, card := range d {
+		fmt.Println(i, card)
+	}
+}
