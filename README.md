@@ -151,3 +151,9 @@ func printMap(c map[string]string) {
 	}
 }
 ```
+
+
+
+### concurrency
+
+Concurrency - starts the new one when go routine blocks like http request
